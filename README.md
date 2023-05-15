@@ -7,6 +7,8 @@ This is a test repository created to reproduce the issue described in [vercel/st
 2. Setup a new vercel project
 3. Add the following to Setting > Environment Variables
   ```txt
-  postgres://<user>:<password>@<host>:5432/verceldb?serverVersion=15
+  Key     = DATABASE_URL
+  Value   = postgresql://<user>:<password>@<host>:5432/verceldb?serverVersion=15
   ```
+  Make sure to change the `<user>`, `<password>`, and `<host>` values.
 4. Deploy the project.
